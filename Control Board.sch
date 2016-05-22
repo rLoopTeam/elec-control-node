@@ -820,7 +820,9 @@ Wire Wire Line
 Wire Wire Line
 	1500 2450 1000 2450
 Wire Wire Line
-	1450 3750 1450 3950
+	1450 3750 1450 3850
+Wire Wire Line
+	1450 3850 1450 3950
 Connection ~ 1450 3850
 Wire Wire Line
 	1500 1650 1000 1650
@@ -829,7 +831,9 @@ Wire Wire Line
 Wire Wire Line
 	1000 2100 1000 2150
 Wire Wire Line
-	850  1950 1500 1950
+	850  1950 1000 1950
+Wire Wire Line
+	1000 1950 1500 1950
 Wire Wire Line
 	850  1950 850  2000
 Connection ~ 1000 1950
@@ -842,7 +846,9 @@ Wire Wire Line
 Wire Wire Line
 	950  3600 950  3650
 Wire Wire Line
-	800  3450 1450 3450
+	800  3450 950  3450
+Wire Wire Line
+	950  3450 1450 3450
 Wire Wire Line
 	800  3450 800  3500
 Connection ~ 950  3450
@@ -855,26 +861,34 @@ Wire Wire Line
 Wire Wire Line
 	950  5000 950  5050
 Wire Wire Line
-	800  4850 1450 4850
+	800  4850 950  4850
+Wire Wire Line
+	950  4850 1450 4850
 Wire Wire Line
 	800  4850 800  4900
 Connection ~ 950  4850
 Wire Wire Line
 	1500 1650 1500 1800
 Wire Wire Line
-	1500 2250 1500 2450
+	1500 2250 1500 2350
+Wire Wire Line
+	1500 2350 1500 2450
 Connection ~ 1500 2350
 Wire Wire Line
 	1450 4700 1450 4550
 Wire Wire Line
-	1450 5150 1450 5350
+	1450 5150 1450 5250
+Wire Wire Line
+	1450 5250 1450 5350
 Connection ~ 1450 5250
 Wire Wire Line
 	10650 5350 10350 5350
 Wire Wire Line
 	2550 1600 3550 1600
 Wire Wire Line
-	3550 1600 3550 3100
+	3550 1600 3550 2750
+Wire Wire Line
+	3550 2750 3550 3100
 Wire Wire Line
 	3550 2750 4400 2750
 Wire Wire Line
@@ -883,7 +897,9 @@ Connection ~ 3550 2750
 Wire Wire Line
 	2550 1700 3300 1700
 Wire Wire Line
-	3300 1700 3300 3200
+	3300 1700 3300 2650
+Wire Wire Line
+	3300 2650 3300 3200
 Wire Wire Line
 	3300 3200 2500 3200
 Wire Wire Line
@@ -910,7 +926,9 @@ Wire Wire Line
 Wire Wire Line
 	5050 4350 5050 4500
 Wire Wire Line
-	5050 4500 5250 4500
+	5050 4500 5150 4500
+Wire Wire Line
+	5150 4500 5250 4500
 Wire Wire Line
 	5150 4500 5150 4350
 Wire Wire Line
@@ -936,7 +954,9 @@ Wire Wire Line
 Wire Wire Line
 	5300 900  5200 900 
 Wire Wire Line
-	10300 1700 10600 1700
+	10300 1700 10450 1700
+Wire Wire Line
+	10450 1700 10600 1700
 Wire Wire Line
 	10600 1700 10600 1950
 Wire Wire Line
@@ -949,7 +969,9 @@ Wire Wire Line
 Wire Wire Line
 	9600 1550 9850 1550
 Wire Wire Line
-	9450 1700 9750 1700
+	9450 1700 9600 1700
+Wire Wire Line
+	9600 1700 9750 1700
 Wire Wire Line
 	9750 1700 9750 1950
 Wire Wire Line
@@ -962,7 +984,9 @@ Wire Wire Line
 Wire Wire Line
 	10450 3250 10700 3250
 Wire Wire Line
-	10300 3400 10600 3400
+	10300 3400 10450 3400
+Wire Wire Line
+	10450 3400 10600 3400
 Wire Wire Line
 	10600 3400 10600 3650
 Wire Wire Line
@@ -975,7 +999,9 @@ Wire Wire Line
 Wire Wire Line
 	9600 3250 9850 3250
 Wire Wire Line
-	9450 3400 9750 3400
+	9450 3400 9600 3400
+Wire Wire Line
+	9600 3400 9750 3400
 Wire Wire Line
 	9750 3400 9750 3650
 Wire Wire Line
@@ -988,7 +1014,9 @@ Wire Wire Line
 Wire Wire Line
 	8650 1550 8900 1550
 Wire Wire Line
-	8500 1700 8800 1700
+	8500 1700 8650 1700
+Wire Wire Line
+	8650 1700 8800 1700
 Wire Wire Line
 	8800 1700 8800 1950
 Wire Wire Line
@@ -1001,7 +1029,9 @@ Wire Wire Line
 Wire Wire Line
 	7800 1550 8050 1550
 Wire Wire Line
-	7650 1700 7950 1700
+	7650 1700 7800 1700
+Wire Wire Line
+	7800 1700 7950 1700
 Wire Wire Line
 	7950 1700 7950 1950
 Wire Wire Line
@@ -1014,7 +1044,9 @@ Wire Wire Line
 Wire Wire Line
 	8650 3250 8900 3250
 Wire Wire Line
-	8500 3400 8800 3400
+	8500 3400 8650 3400
+Wire Wire Line
+	8650 3400 8800 3400
 Wire Wire Line
 	8800 3400 8800 3650
 Wire Wire Line
@@ -1027,7 +1059,9 @@ Wire Wire Line
 Wire Wire Line
 	7800 3250 8050 3250
 Wire Wire Line
-	7650 3400 7950 3400
+	7650 3400 7800 3400
+Wire Wire Line
+	7800 3400 7950 3400
 Wire Wire Line
 	7950 3400 7950 3650
 Wire Wire Line
@@ -1098,9 +1132,11 @@ Wire Wire Line
 Wire Wire Line
 	4000 6300 4650 6300
 Wire Wire Line
+	4650 6300 5150 6300
+Wire Wire Line
 	4000 6200 4650 6200
 Wire Wire Line
-	4000 6100 5150 6100
+	4650 6200 5150 6200
 Text Label 4300 6500 0    60   ~ 0
 LRF_Tx
 Text Label 4300 6400 0    60   ~ 0
@@ -1126,9 +1162,12 @@ LRF_Tx
 Wire Wire Line
 	5250 4500 5250 4350
 Connection ~ 5150 4500
-Text Label 5150 6100 0    60   ~ 0
+Text Notes 5400 6250 0    60   ~ 0
+Test Point x2\n
+Connection ~ 4650 6200
+Connection ~ 4650 6300
+Text Label 5150 6200 0    60   ~ 0
 P1
-Connection ~ 4650 6100
-Text Notes 5350 6100 0    60   ~ 0
-Test Point\n
+Text Label 5150 6300 0    60   ~ 0
+P2
 $EndSCHEMATC
