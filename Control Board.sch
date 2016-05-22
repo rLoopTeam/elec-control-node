@@ -1100,7 +1100,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 6200 4650 6200
 Wire Wire Line
-	4000 6100 4650 6100
+	4000 6100 5150 6100
 Text Label 4300 6500 0    60   ~ 0
 LRF_Tx
 Text Label 4300 6400 0    60   ~ 0
@@ -1126,4 +1126,9 @@ LRF_Tx
 Wire Wire Line
 	5250 4500 5250 4350
 Connection ~ 5150 4500
+Text Label 5150 6100 0    60   ~ 0
+P1
+Connection ~ 4650 6100
+Text Notes 5350 6100 0    60   ~ 0
+Test Point\n
 $EndSCHEMATC
