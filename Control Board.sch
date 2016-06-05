@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Control Board-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,15 +29,16 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:rloop
 LIBS:Control Board-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
-Sheet 1 1
-Title ""
+Sheet 1 2
+Title "Control Node - Overview"
 Date ""
-Rev ""
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -44,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MMA8451Q U1
+L MMA8451Q-RESCUE-Control_Board U1
 U 1 1 571E86E7
 P 1950 3800
 F 0 "U1" H 1950 4550 60  0000 C CNN
@@ -55,7 +57,7 @@ F 3 "" H 1500 3550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MMA8451Q U2
+L MMA8451Q-RESCUE-Control_Board U2
 U 1 1 571E8774
 P 1950 5200
 F 0 "U2" H 1950 5950 60  0000 C CNN
@@ -66,7 +68,7 @@ F 3 "" H 1500 4950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MMA8451Q U3
+L MMA8451Q-RESCUE-Control_Board U3
 U 1 1 571E8799
 P 2000 2300
 F 0 "U3" H 2000 3050 60  0000 C CNN
@@ -780,49 +782,12 @@ Text Label 9550 5750 0    60   ~ 0
 A3
 Text Notes 1650 1300 0    60   ~ 0
 Accelerometers
-$Comp
-L CONN_01X07 P?
-U 1 1 5721A0BE
-P 3800 6400
-F 0 "P?" H 3800 6800 50  0000 C CNN
-F 1 "CONN_01X07" V 3900 6400 50  0000 C CNN
-F 2 "" H 3800 6400 50  0000 C CNN
-F 3 "" H 3800 6400 50  0000 C CNN
-	1    3800 6400
-	-1   0    0    1   
-$EndComp
-Text Notes 3400 5950 0    60   ~ 0
-Laser Rangefinder CM3-30\nRS-232
-$Comp
-L +24V #PWR?
-U 1 1 5721A87F
-P 4400 7000
-F 0 "#PWR?" H 4400 6850 50  0001 C CNN
-F 1 "+24V" H 4400 7140 50  0000 C CNN
-F 2 "" H 4400 7000 50  0000 C CNN
-F 3 "" H 4400 7000 50  0000 C CNN
-	1    4400 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 5721ADC5
-P 4650 6750
-F 0 "#PWR?" H 4650 6500 50  0001 C CNN
-F 1 "GND" H 4650 6600 50  0000 C CNN
-F 2 "" H 4650 6750 50  0000 C CNN
-F 3 "" H 4650 6750 50  0000 C CNN
-	1    4650 6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1450 3300 1450 3150
 Wire Wire Line
 	1500 2450 1000 2450
 Wire Wire Line
-	1450 3750 1450 3850
-Wire Wire Line
-	1450 3850 1450 3950
+	1450 3750 1450 3950
 Connection ~ 1450 3850
 Wire Wire Line
 	1500 1650 1000 1650
@@ -831,9 +796,7 @@ Wire Wire Line
 Wire Wire Line
 	1000 2100 1000 2150
 Wire Wire Line
-	850  1950 1000 1950
-Wire Wire Line
-	1000 1950 1500 1950
+	850  1950 1500 1950
 Wire Wire Line
 	850  1950 850  2000
 Connection ~ 1000 1950
@@ -846,9 +809,7 @@ Wire Wire Line
 Wire Wire Line
 	950  3600 950  3650
 Wire Wire Line
-	800  3450 950  3450
-Wire Wire Line
-	950  3450 1450 3450
+	800  3450 1450 3450
 Wire Wire Line
 	800  3450 800  3500
 Connection ~ 950  3450
@@ -861,34 +822,26 @@ Wire Wire Line
 Wire Wire Line
 	950  5000 950  5050
 Wire Wire Line
-	800  4850 950  4850
-Wire Wire Line
-	950  4850 1450 4850
+	800  4850 1450 4850
 Wire Wire Line
 	800  4850 800  4900
 Connection ~ 950  4850
 Wire Wire Line
 	1500 1650 1500 1800
 Wire Wire Line
-	1500 2250 1500 2350
-Wire Wire Line
-	1500 2350 1500 2450
+	1500 2250 1500 2450
 Connection ~ 1500 2350
 Wire Wire Line
 	1450 4700 1450 4550
 Wire Wire Line
-	1450 5150 1450 5250
-Wire Wire Line
-	1450 5250 1450 5350
+	1450 5150 1450 5350
 Connection ~ 1450 5250
 Wire Wire Line
 	10650 5350 10350 5350
 Wire Wire Line
 	2550 1600 3550 1600
 Wire Wire Line
-	3550 1600 3550 2750
-Wire Wire Line
-	3550 2750 3550 3100
+	3550 1600 3550 3100
 Wire Wire Line
 	3550 2750 4400 2750
 Wire Wire Line
@@ -897,9 +850,7 @@ Connection ~ 3550 2750
 Wire Wire Line
 	2550 1700 3300 1700
 Wire Wire Line
-	3300 1700 3300 2650
-Wire Wire Line
-	3300 2650 3300 3200
+	3300 1700 3300 3200
 Wire Wire Line
 	3300 3200 2500 3200
 Wire Wire Line
@@ -926,9 +877,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 4350 5050 4500
 Wire Wire Line
-	5050 4500 5150 4500
-Wire Wire Line
-	5150 4500 5250 4500
+	5050 4500 5250 4500
 Wire Wire Line
 	5150 4500 5150 4350
 Wire Wire Line
@@ -954,9 +903,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 900  5200 900 
 Wire Wire Line
-	10300 1700 10450 1700
-Wire Wire Line
-	10450 1700 10600 1700
+	10300 1700 10600 1700
 Wire Wire Line
 	10600 1700 10600 1950
 Wire Wire Line
@@ -969,9 +916,7 @@ Wire Wire Line
 Wire Wire Line
 	9600 1550 9850 1550
 Wire Wire Line
-	9450 1700 9600 1700
-Wire Wire Line
-	9600 1700 9750 1700
+	9450 1700 9750 1700
 Wire Wire Line
 	9750 1700 9750 1950
 Wire Wire Line
@@ -984,9 +929,7 @@ Wire Wire Line
 Wire Wire Line
 	10450 3250 10700 3250
 Wire Wire Line
-	10300 3400 10450 3400
-Wire Wire Line
-	10450 3400 10600 3400
+	10300 3400 10600 3400
 Wire Wire Line
 	10600 3400 10600 3650
 Wire Wire Line
@@ -999,9 +942,7 @@ Wire Wire Line
 Wire Wire Line
 	9600 3250 9850 3250
 Wire Wire Line
-	9450 3400 9600 3400
-Wire Wire Line
-	9600 3400 9750 3400
+	9450 3400 9750 3400
 Wire Wire Line
 	9750 3400 9750 3650
 Wire Wire Line
@@ -1014,9 +955,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 1550 8900 1550
 Wire Wire Line
-	8500 1700 8650 1700
-Wire Wire Line
-	8650 1700 8800 1700
+	8500 1700 8800 1700
 Wire Wire Line
 	8800 1700 8800 1950
 Wire Wire Line
@@ -1029,9 +968,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 1550 8050 1550
 Wire Wire Line
-	7650 1700 7800 1700
-Wire Wire Line
-	7800 1700 7950 1700
+	7650 1700 7950 1700
 Wire Wire Line
 	7950 1700 7950 1950
 Wire Wire Line
@@ -1044,9 +981,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 3250 8900 3250
 Wire Wire Line
-	8500 3400 8650 3400
-Wire Wire Line
-	8650 3400 8800 3400
+	8500 3400 8800 3400
 Wire Wire Line
 	8800 3400 8800 3650
 Wire Wire Line
@@ -1059,9 +994,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 3250 8050 3250
 Wire Wire Line
-	7650 3400 7800 3400
-Wire Wire Line
-	7800 3400 7950 3400
+	7650 3400 7950 3400
 Wire Wire Line
 	7950 3400 7950 3650
 Wire Wire Line
@@ -1118,36 +1051,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 2950 3700 4500
 Wire Wire Line
-	4000 6700 4000 7000
-Wire Wire Line
-	4000 7000 4400 7000
-Wire Wire Line
-	4000 6600 4650 6600
-Wire Wire Line
-	4650 6600 4650 6750
-Wire Wire Line
-	4000 6500 4650 6500
-Wire Wire Line
-	4000 6400 4650 6400
-Wire Wire Line
-	4000 6300 4650 6300
-Wire Wire Line
-	4650 6300 5150 6300
-Wire Wire Line
-	4000 6200 4650 6200
-Wire Wire Line
-	4650 6200 5150 6200
-Text Label 4300 6500 0    60   ~ 0
-LRF_Tx
-Text Label 4300 6400 0    60   ~ 0
-LRF_Rx
-Text Label 4100 6300 0    60   ~ 0
-LRF_Trigger_Output
-Text Label 4100 6200 0    60   ~ 0
-LRD_Analog_Output
-Text Label 4100 6100 0    60   ~ 0
-LRD_Trigger_Input
-Wire Wire Line
 	4400 3150 4200 3150
 Wire Wire Line
 	4200 3150 4200 3500
@@ -1162,12 +1065,14 @@ LRF_Tx
 Wire Wire Line
 	5250 4500 5250 4350
 Connection ~ 5150 4500
-Text Notes 5400 6250 0    60   ~ 0
-Test Point x2\n
-Connection ~ 4650 6200
-Connection ~ 4650 6300
-Text Label 5150 6200 0    60   ~ 0
-P1
-Text Label 5150 6300 0    60   ~ 0
-P2
+Text Notes 11950 10200 0    118  ~ 0
+rLoop - Control Node
+$Sheet
+S 1700 8650 1500 1200
+U 5753FE7B
+F0 "Sheet_Laser" 118
+F1 "ControlNode_Laser.sch" 118
+F2 "LASER_RX" O R 3200 8750 63 
+F3 "LASER_TX" I R 3200 8850 63 
+$EndSheet
 $EndSCHEMATC
