@@ -197,4 +197,17 @@ Text Notes 11900 10200 0    118  ~ 0
 rLoop - Control Node
 Text Notes 11900 10400 0    60   ~ 0
 Original Author: SafetyLok
+$Comp
+L MAX3110E-RESCUE-Control_Board U?
+U 1 1 575676EE
+P 7350 7750
+AR Path="/575676EE" Ref="U?"  Part="1" 
+AR Path="/5753FE7B/575676EE" Ref="U?"  Part="1" 
+F 0 "U?" H 7000 8700 60  0000 C CNN
+F 1 "MAX3110E" H 7000 7100 60  0000 C CNN
+F 2 "" H 7350 7750 60  0000 C CNN
+F 3 "" H 7350 7750 60  0000 C CNN
+	1    7350 7750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

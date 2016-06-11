@@ -50,7 +50,7 @@ rLoop - Control Node
 Text Notes 11900 10450 0    60   ~ 0
 Original Author: SafetyLok
 $Comp
-L MMA8451Q U?
+L MMA8451Q-RESCUE-Control_Board U?
 U 1 1 57550C5F
 P 6150 4000
 F 0 "U?" H 6150 4500 60  0000 C CNN
@@ -61,7 +61,7 @@ F 3 "" H 6150 4000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MMA8451Q U?
+L MMA8451Q-RESCUE-Control_Board U?
 U 1 1 57550CF8
 P 6150 5600
 F 0 "U?" H 6150 6100 60  0000 C CNN
@@ -72,7 +72,7 @@ F 3 "" H 6150 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MMA8451Q U?
+L MMA8451Q-RESCUE-Control_Board U?
 U 1 1 57550D59
 P 6150 7200
 F 0 "U?" H 6150 7700 60  0000 C CNN
